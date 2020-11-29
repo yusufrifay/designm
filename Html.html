@@ -1,0 +1,307 @@
+<html>
+<head></head>
+<body>
+​  <form id="1"action="doStuff.php" method="post" ><br><br>
+​  <p><h1 align="center" class="animated"><span><b><strong><i>Design Mix</i></strong></b></span></h1></p><br><br>
+​<label><i><strong><h3 align="center">**This app is completely based on IS456:2000 and IS10262:1982**</h3></strong></i></label>
+ 
+​​<label><h4>Test included:</h4></label>
+​​<label>1. If Portland Pozzolona Cement is used, strength achieved by them in 28 days should be known.</label></br>
+​​<label>2. Grading of Fine aggregeate.</label></br>
+​​<label>3. Water reduced by 1% of Superplasticizer should be known.</label></br>
+​​<label>4. Some of the Test are described below.</label><br><br>
+​​
+ 
+​  <label>Enter the Grade of Concrete:</label>
+​  <select name="grade">
+​  ​​<option value="30">30</option>
+​​   <option value="10">10</option>
+​​   <option value="15">15</option>
+​​   <option value="20">20</option>
+​​   <option value="25">25</option>
+​​   <option value="35">35</option>
+​​   <option value="40">40</option>
+​​   <option value="45">45</option>
+​​   <option value="50">50</option>
+​​   <option value="55">55</option>
+​​   </select>
+​   <label>N/mm<sup>2</sup></label><br><br>
+ 
+​  
+​  
+​  
+​   <label>Enter the Grade of Cement:</label>
+​  <select name="gradec">
+​  <optgroup label="Ordinary Portland Cement:">
+​  ​​<option value="OPC 33">OPC 33</option>
+​​   <option value="OPC 43">OPC 43</option>
+​​   <option value="OPC 53">OPC 53</option>
+​​  </optgroup>
+​​  <optgroup label="For Portland Pozzolana Cement:(Since there is no grade. Please select the strength achieved by cement in 28 days in MPa)">
+​​  <option value="ab">31.9-36.8</option>
+​​  <option value="bb">36.8-41.7</option>
+​​  <option value="cb">41.7-46.6</option>
+​​  <option value="db">46.6-51.5</option>
+​​  <option value="eb">51.5-56.4</option>
+​​  <option value="fb">56.4-61.3</option>
+​​  
+​​  
+​​  
+​​  
+​​  
+​​  
+​​  </optgroup>
+​   </select><br><br>
+​  
+​  
+​  
+​   ​<label>Enter the Type of Concrete:</label>
+​   <select name="type of concrete">
+​​   <option value="Plain Cement Concrete">Plain Cement Concrete</option>
+​​   <option value="Reinforced Cement pConcrete">Reinforced Cement Concrete</option>
+​​​</select><br><br>
+​​
+​​<label>Exposure Condition:</label>
+​​<select name="Exposure Condition">
+​​​<option value="Mild">Mild</option>
+​​​<option value="Moderate">Moderate</option>
+​​​<option value="Severe">Severe</option>
+​​​<option value="Very Severe">Very Severe</option>
+​​​<option value="Extreme">Extreme</option>
+​​</select><br><br>
+​​
+​​<label>Size of Aggregate:</label>
+​​<select name="Size of Aggregate">
+​​​<option value="20">20</option>
+​​​<option value="10">10</option>
+​​​<option value="40">40</option>
+​​</select>
+​​<label>mm</label><br><br>
+​​
+​​
+​​<label><i>Take 1kg of Fine Aggregate and Sieve Analysis is done. Note the percentage of Aggregate passing through the 600 micron sieve and Select the option below:</i></label><br><br>
+​​
+​​<label>Enter the Passing percent through IS Sieve 300 micron:</label>
+​​<select name="zone">
+​​​<option value="15-34">15-34</option>
+​​​<option value="35-59">35-59</option>
+​​​<option value="60-79">60-79</option>
+​​​<option value="80-100">80-100</option>
+​​</select>
+​​<label>%</label><br><br>
+​​
+​​
+​​<label>Slump Value Needed:</label>
+​​<select name="Slump Needed">
+​​​<option value="100">100</option>
+​​​<option value="10">10</option>
+​​​<option value="25">25</option>
+​​​<option value="50">50</option>
+​​​<option value="75">75</option>
+​​​<option value="125">125</option>
+​​​<option value="150">150</option>
+​​​<option value="175">175</option>
+​​​<option value="200">200</option>
+​​</select>
+​​<label>mm</label><br><br>
+​​
+​​<label>Superplasticizer Used?</label>
+​​<select name="Superplasticizer Used?">
+​​​<option value="No">No</option>
+​​​<option value="Yes">Yes</option>
+​​</select><br><br>
+​​
+​​
+​​<label>% Superplasticizer Used</br>(Trail ie, 1% and 2%):</label>
+​​<select name=n>
+​​​<option value="1">1</option>
+​​​<option value="2">2</option>
+​​</select><br><br>
+​​
+​​
+​​
+​​
+​​<label>% of Water Reduced by 1% of Superplasticizer(Please avoid if no Superplastizer used):</label>
+​​<input type="number" id="%1spw"style="width: 100px;height: 40px" placeholder="Enter here..." default="0"/>
+​​<label>%</label><br><br>
+​​
+ 
+ 
+​​<label>Type of Cement ( Make sure that the Grade and Type of cement matches ) :</label>
+​​<select name="type of cement">
+​​​<option value="opc">Ordinary Portland Cement</option>
+​​​<option value="ppc">Portland Pozzolana Cement</option>
+​​</select><br><br>
+​​
+​​
+​​<label>Methof of Placing of Concrete:</label>
+​​<select name="method of placing">
+​​​<option value="pumping">Pumping Method</option>
+​​​<option value="non-pumping">Non-Pumping Method</option>
+​​</select><br><br>
+​​
+​​
+​​<hr width="40%"/><br><br>
+​​
+​​
+​​
+​​
+​​<label><h2><u><i>Aggregates:</i></u></h2></label>
+​​
+​​<label><i>Take 1kg of Air Dried Aggregate and Calculate the following Results</i><//i></label><br><br>
+ 
+ 
+ 
+​​<label><i>Take some quantity of Water and Soak the Aggregates in the Water and Enter the Details Below</i></label><br><br>
+ 
+​​
+​​
+​​<label><h3><u><i>Coarse Aggregate:</i></u></h3></label>
+ 
+​​<label>Weight of Water(before soaking of aggregates):</label>
+​​<input type="number" id="wowc" style="width: 100px;height: 40px" placeholder="Enter here..." required/>
+ 
+​​<label>kg</label><br />
+​​
+​​
+​​<label>Weight of Water with Aggregates(After Soaking of Aggregates for "Atleast 24 hours"):</label>
+​​<input type="number" id="dwwc" style="width: 100px;height: 40px" placeholder="Enter here..."/>
+ 
+​​<label>kg</label><br />
+ 
+ 
+​​<label>Surface Saturated Dry Weight of Coarse Aggreate(wet condition):</label>
+​​<input type="number" id="ssdc"style="width: 100px;height: 40px" placeholder="Enter here..."/>
+ 
+​​<label>kg</label><br />
+​​
+​​
+​​<label>Oven Dried Weight of Coarse Aggregate(Completely Dried)</label>
+​​
+​​<input type="number" id="odwc"style="width: 100px;height: 40px" placeholder="Enter here..."/>
+ 
+​​<label>kg</label><br />
+​​
+​​
+​​<hr width="30%"/><br><br>
+​​
+​​
+​​
+​​<label><h3><u><i>Fine Aggregate:</i></u></h3></label>
+​​
+​​<label>Weight of Water(before soaking of aggregates):</label>
+​​
+​​
+​​<input type="number" id="wowf" style="width: 100px;height: 40px" placeholder="Enter here..."/>
+ 
+​​<label>kg</label><br />
+​​
+​​
+​​<label>Weight of Water with Aggregates(After Soaking of Aggregates for "Atleast 24 hours"):</label>
+​​<input type="number" id="dwwf" style="width: 100px;height: 40px" placeholder="Enter here..."/>
+ 
+​​<label>kg</label><br />
+ 
+ 
+​​<label>Surface Saturated Dry Weight of Coarse Aggreate(wet condition):</label>
+​​<input type="number" id="ssdf"style="width: 100px;height: 40px" placeholder="Enter here..."/>
+ 
+​​<label>kg</label><br />
+​​
+​​
+​​<label>Oven Dried Weight of Coarse Aggregate(Completely Dried)</label>
+​​
+​​<input type="number" id="odwf"style="width: 100px;height: 40px" placeholder="Enter here..."/>
+ 
+​​<label>kg</label><br><br>
+​​
+​​
+​​<input type = "button" onclick = "myfunc()" value = "Submit"><br><br>
+ 
+ 
+ 
+​​
+ 
+​​
+​​<br>
+​​​Result : <br>
+​​​
+​​​
+​​​<label>Ratio of Cement:Fine Aggregate:Coarse Aggregate:</label></br>
+​​​<input type="text" id="txtresult1" name="TextBox3" style="width: 50px;height: 40px" >
+​​​<label>:</label>
+​​​
+​​​<input type="text" id="txtresult2" name="TextBox3" style="width: 50px;height: 40px" >
+​​​<label>:</label>
+​​​
+​​​<input type="text" id="txtresult3" name="TextBox3" style="width: 50px;height: 40px" >
+​​​<br><br>
+​​​<label >Water Cement Ratio:</label>
+​​​<input type="text" id="txtresult4" name="TextBox3" style="width: 100px;height: 40px" >
+​​​
+​​​<br><br>
+​​​
+​​​
+​​​<input type="reset" value="Reset">
+ 
+ 
+​​</form>
+​​<hr width="50%"/><br><br>
+​​<form>
+​​
+​​<label><h4>*This section is only for Superplasticizer*</h4></label><br><br>
+​​
+​​<label><i>If the samples are made with 1% and 2% superplasticizer and slump values are noted, Select the below Option</i></label><br><br>
+​​
+​  <label>
+​  <input class= "messageCheckbox"type="checkbox" id="action" ​​value="after" style="vertical-align: middle; margin:5px" name="choice[]" />After<br><br>
+​​</label>
+​​
+​​
+​​<p><h2><b></b><strong><u><i>After Sample Making</i></u></strong></b></h2></p><br><br>
+​​
+​​
+​​<label>Slump Obtained by 1% of Superplasticizer:</label>
+​​<input type="number" id="Slump Obtained by 1%" style="width: 100px;height: 40px" placeholder="Enter here..." />
+​​<label>mm</label><br><br>
+​​<label>Slump Obtained by 2% of Superplasticizer:</label>
+​​<input type="number" id="Slump Obtained by 2%" style="width: 100px;height: 40px" placeholder="Enter here..." />
+​​<label>mm</label><br><br>
+​​
+​​
+​​
+​​
+​​
+​​
+​​<input type = "button" onclick = "myfunc()" value = "Submit"><br><br>
+​​<input type="reset" value="Reset">
+​​<hr width="50%"/><br><br>
+​​<br>
+​​</form>
+​​<form>
+​​​Result : <br>
+​​​
+​​​
+​​​<label>% of Superplasticizer for given slump:</label>
+​​​<input type="text" id="txtresult5" name="TextBox4" style="width: 50px;height: 40px" ><br><br>
+ 
+​​​<label>
+​  <input type="radio" id="actiona" ​​value="done" style="vertical-align: middle; margin:5px" name="choice[]" />Done<br><br>
+​​</label>
+​​​
+​​​<label>Slump Obtained :</label>
+​​<input type="number" id="Slump Obtained" style="width: 100px;height: 40px" placeholder="Enter here..." />
+​​<label>mm</label><br><br>
+​​
+​​<label>% of Superplasticizer Used :</label>
+​​<input type="number" id="spusedfind" style="width: 100px;height: 40px" placeholder="Enter here..." />
+​​<label>%</label><br><br>
+​​
+​​<input type = "button" onclick = "myfunc()" value = "Submit"><br><br>
+​​<input type="reset" value="Reset">
+​​<hr width="75%"/><br><br>
+ 
+​​</form>
+​​​
+</body>
+</html>
